@@ -24,6 +24,10 @@ def softmax(x):
     """
 
     ### YOUR CODE HERE
+    per_item_max = tf.reduce_max(x, axis=1, keep_dims=True)
+    y = tf.exp(x - per_item_max)
+    sum = tf.reduce_sum(y, axis=1, keep_dims=True)
+    out = tf.div(y, sum)
     ### END YOUR CODE
 
     return out
@@ -46,7 +50,7 @@ def cross_entropy_loss(y, yhat):
 
     Args:
         y:    tf.Tensor with shape (n_samples, n_classes). One-hot encoded.
-        yhat: tf.Tensorwith shape (n_sample, n_classes). Each row encodes a
+        yhat: tf.Tensor with shape (n_sample, n_classes). Each row encodes a
                     probability distribution and should sum to 1.
     Returns:
         out:  tf.Tensor with shape (1,) (Scalar output). You need to construct this
@@ -54,6 +58,8 @@ def cross_entropy_loss(y, yhat):
     """
 
     ### YOUR CODE HERE
+    y = tf.to_float(y)
+    out = tf.reduce_sum(-y * tf.log(yhat))
     ### END YOUR CODE
 
     return out
@@ -94,8 +100,8 @@ def test_cross_entropy_loss_basic():
         test1 = sess.run(test1)
     expected = -3 * np.log(.5)
     test_all_close("Cross-entropy test 1", test1, expected)
-
     print "Basic (non-exhaustive) cross-entropy tests pass"
+
 
 if __name__ == "__main__":
     test_softmax_basic()
