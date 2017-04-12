@@ -24,6 +24,7 @@ class Config(object):
     batch_size = 2048
     n_epochs = 10
     lr = 0.001
+    l2reg = 1e-8
 
 class ParserModel(Model):
     """
@@ -152,8 +153,8 @@ class ParserModel(Model):
         pred = tf.matmul(h_drop, U) + b2
 
         # l2 regularization
-        # l2reg = self.config.l2reg
-        # self.l2_loss = l2reg * (tf.nn.l2_loss(W) + tf.nn.l2_loss(U))
+        l2reg = self.config.l2reg
+        self.l2_loss = l2reg * (tf.nn.l2_loss(W) + tf.nn.l2_loss(U))
         ### END YOUR CODE
         return pred
 
@@ -172,7 +173,7 @@ class ParserModel(Model):
         """
         ### YOUR CODE HERE
         loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=self.labels_placeholder, logits=pred))
+            labels=self.labels_placeholder, logits=pred) + self.l2_loss)
         ### END YOUR CODE
         return loss
 
