@@ -25,7 +25,6 @@ class Config(object):
     n_epochs = 10
     lr = 0.001
 
-
 class ParserModel(Model):
     """
     Implements a feedforward neural network with an embedding layer and single hidden layer.
@@ -54,6 +53,9 @@ class ParserModel(Model):
         (Don't change the variable names)
         """
         ### YOUR CODE HERE
+        self.input_placeholder = tf.placeholder(tf.int32, (None, self.config.n_features), "input")
+        self.labels_placeholder = tf.placeholder(tf.float32, (None, self.config.n_classes), "labels")
+        self.dropout_placeholder = tf.placeholder(tf.float32, [], "dropout")
         ### END YOUR CODE
 
     def create_feed_dict(self, inputs_batch, labels_batch=None, dropout=1):
@@ -79,6 +81,12 @@ class ParserModel(Model):
             feed_dict: The feed dictionary mapping from placeholders to values.
         """
         ### YOUR CODE HERE
+        feed_dict = {
+            self.input_placeholder: inputs_batch,
+            self.dropout_placeholder: dropout
+        }
+        if labels_batch is not None:
+            feed_dict[self.labels_placeholder] = labels_batch
         ### END YOUR CODE
         return feed_dict
 
@@ -100,6 +108,9 @@ class ParserModel(Model):
             embeddings: tf.Tensor of shape (None, n_features*embed_size)
         """
         ### YOUR CODE HERE
+        embedding = tf.Variable(self.pretrained_embeddings, "embedding")
+        features = tf.nn.embedding_lookup(embedding, self.input_placeholder)
+        embeddings = tf.reshape(features, [-1, self.config.n_features * self.config.embed_size])
         ### END YOUR CODE
         return embeddings
 
@@ -130,6 +141,19 @@ class ParserModel(Model):
 
         x = self.add_embedding()
         ### YOUR CODE HERE
+        initializer = xavier_weight_init()
+        W = initializer(shape=(self.config.n_features * self.config.embed_size, self.config.hidden_size), name="W")
+        b1 = tf.Variable(tf.zeros((1, self.config.hidden_size), tf.float32), name="b1")
+        U = initializer(shape=(self.config.hidden_size, self.config.n_classes), name="U")
+        b2 = tf.Variable(tf.zeros((1, self.config.n_classes), tf.float32), name="b2")
+
+        h = tf.nn.relu(tf.matmul(x, W) + b1)
+        h_drop = tf.nn.dropout(h, self.dropout_placeholder)
+        pred = tf.matmul(h_drop, U) + b2
+
+        # l2 regularization
+        # l2reg = self.config.l2reg
+        # self.l2_loss = l2reg * (tf.nn.l2_loss(W) + tf.nn.l2_loss(U))
         ### END YOUR CODE
         return pred
 
@@ -147,6 +171,8 @@ class ParserModel(Model):
             loss: A 0-d tensor (scalar)
         """
         ### YOUR CODE HERE
+        loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=self.labels_placeholder, logits=pred))
         ### END YOUR CODE
         return loss
 
@@ -170,6 +196,7 @@ class ParserModel(Model):
             train_op: The Op for training.
         """
         ### YOUR CODE HERE
+        train_op = tf.train.AdamOptimizer(self.config.lr).minimize(loss)
         ### END YOUR CODE
         return train_op
 
