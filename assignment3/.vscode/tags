@@ -1,0 +1,329 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARGS	../q1_window.py	/^    ARGS = parser.parse_args()$/;"	kind:variable	line:523
+ARGS	../q2_rnn.py	/^    ARGS = parser.parse_args()$/;"	kind:variable	line:554
+ARGS	../q3_gru.py	/^    ARGS = parser.parse_args()$/;"	kind:variable	line:348
+CASES	../data_util.py	/^CASES = ["aa", "AA", "Aa", "aA"]$/;"	kind:variable	line:22
+Config	../q1_window.py	/^class Config:$/;"	kind:class	line:29
+Config	../q2_rnn.py	/^class Config:$/;"	kind:class	line:30
+Config	../q3_gru.py	/^class Config:$/;"	kind:class	line:33
+ConfusionMatrix	../data_util.py	/^from util import read_conll, one_hot, window_iterator, ConfusionMatrix, load_word_vector_mapping$/;"	kind:namespace	line:12
+ConfusionMatrix	../ner_model.py	/^from util import ConfusionMatrix, Progbar, minibatches$/;"	kind:namespace	line:10
+ConfusionMatrix	../util.py	/^class ConfusionMatrix(object):$/;"	kind:class	line:197
+Counter	../data_util.py	/^from collections import Counter$/;"	kind:namespace	line:9
+Counter	../util.py	/^from collections import defaultdict, Counter, OrderedDict$/;"	kind:namespace	line:15
+EMBED_SIZE	../data_util.py	/^from defs import LBLS, NONE, LMAP, NUM, UNK, EMBED_SIZE$/;"	kind:namespace	line:13
+EMBED_SIZE	../defs.py	/^EMBED_SIZE = 50$/;"	kind:variable	line:21
+END_TOKEN	../data_util.py	/^END_TOKEN = "<\/s>"$/;"	kind:variable	line:24
+FDIM	../data_util.py	/^FDIM = 4$/;"	kind:variable	line:20
+GRUCell	../q2_rnn.py	/^from q3_gru_cell import GRUCell$/;"	kind:namespace	line:24
+GRUCell	../q3_gru.py	/^from q3_gru_cell import GRUCell$/;"	kind:namespace	line:25
+GRUCell	../q3_gru_cell.py	/^class GRUCell(tf.nn.rnn_cell.RNNCell):$/;"	kind:class	line:21
+LBLS	../data_util.py	/^from defs import LBLS, NONE, LMAP, NUM, UNK, EMBED_SIZE$/;"	kind:namespace	line:13
+LBLS	../defs.py	/^LBLS = [$/;"	kind:variable	line:9
+LBLS	../ner_model.py	/^from defs import LBLS$/;"	kind:namespace	line:13
+LBLS	../q1_window.py	/^from defs import LBLS$/;"	kind:namespace	line:21
+LBLS	../q2_rnn.py	/^from defs import LBLS$/;"	kind:namespace	line:22
+LMAP	../data_util.py	/^from defs import LBLS, NONE, LMAP, NUM, UNK, EMBED_SIZE$/;"	kind:namespace	line:13
+LMAP	../defs.py	/^LMAP = {k: one_hot(5,i) for i, k in enumerate(LBLS)}$/;"	kind:variable	line:17
+Model	../model.py	/^class Model(object):$/;"	kind:class	line:1
+Model	../ner_model.py	/^from model import Model$/;"	kind:namespace	line:12
+Model	../q3_gru.py	/^from model import Model$/;"	kind:namespace	line:23
+ModelHelper	../data_util.py	/^class ModelHelper(object):$/;"	kind:class	line:65
+ModelHelper	../q1_window.py	/^from data_util import load_and_preprocess_data, load_embeddings, read_conll, ModelHelper$/;"	kind:namespace	line:19
+ModelHelper	../q2_rnn.py	/^from data_util import load_and_preprocess_data, load_embeddings, ModelHelper$/;"	kind:namespace	line:20
+NERModel	../ner_model.py	/^class NERModel(Model):$/;"	kind:class	line:19
+NERModel	../q1_window.py	/^from ner_model import NERModel$/;"	kind:namespace	line:20
+NERModel	../q2_rnn.py	/^from ner_model import NERModel$/;"	kind:namespace	line:21
+NONE	../data_util.py	/^from defs import LBLS, NONE, LMAP, NUM, UNK, EMBED_SIZE$/;"	kind:namespace	line:13
+NONE	../defs.py	/^NONE = "O"$/;"	kind:variable	line:16
+NUM	../data_util.py	/^from defs import LBLS, NONE, LMAP, NUM, UNK, EMBED_SIZE$/;"	kind:namespace	line:13
+NUM	../defs.py	/^NUM = "NNNUMMM"$/;"	kind:variable	line:18
+OrderedDict	../util.py	/^from collections import defaultdict, Counter, OrderedDict$/;"	kind:namespace	line:15
+P_CASE	../data_util.py	/^P_CASE = "CASE:"$/;"	kind:variable	line:21
+Progbar	../ner_model.py	/^from util import ConfusionMatrix, Progbar, minibatches$/;"	kind:namespace	line:10
+Progbar	../q3_gru.py	/^from util import Progbar, minibatches$/;"	kind:namespace	line:22
+Progbar	../util.py	/^class Progbar(object):$/;"	kind:class	line:266
+RNNCell	../q2_rnn.py	/^from q2_rnn_cell import RNNCell$/;"	kind:namespace	line:23
+RNNCell	../q2_rnn_cell.py	/^class RNNCell(tf.nn.rnn_cell.RNNCell):$/;"	kind:class	line:21
+RNNCell	../q3_gru.py	/^from q2_rnn_cell import RNNCell$/;"	kind:namespace	line:26
+RNNModel	../q2_rnn.py	/^class RNNModel(NERModel):$/;"	kind:class	line:110
+START_TOKEN	../data_util.py	/^START_TOKEN = "<s>"$/;"	kind:variable	line:23
+SequencePredictor	../q3_gru.py	/^class SequencePredictor(Model):$/;"	kind:class	line:45
+StringIO	../util.py	/^import StringIO$/;"	kind:namespace	line:14
+UNK	../data_util.py	/^from defs import LBLS, NONE, LMAP, NUM, UNK, EMBED_SIZE$/;"	kind:namespace	line:13
+UNK	../defs.py	/^UNK = "UUUNKKK"$/;"	kind:variable	line:19
+WindowModel	../q1_window.py	/^class WindowModel(NERModel):$/;"	kind:class	line:112
+__call__	../q2_rnn_cell.py	/^    def __call__(self, inputs, state, scope=None):$/;"	kind:member	line:37
+__call__	../q3_gru_cell.py	/^    def __call__(self, inputs, state, scope=None):$/;"	kind:member	line:37
+__init__	../data_util.py	/^    def __init__(self, tok2id, max_length):$/;"	kind:member	line:69
+__init__	../ner_model.py	/^    def __init__(self, helper, config, report=None):$/;"	kind:member	line:24
+__init__	../q1_window.py	/^    def __init__(self, helper, config, pretrained_embeddings, report=None):$/;"	kind:member	line:331
+__init__	../q1_window.py	/^    def __init__(self, output_path=None):$/;"	kind:member	line:51
+__init__	../q2_rnn.py	/^    def __init__(self, args):$/;"	kind:member	line:50
+__init__	../q2_rnn.py	/^    def __init__(self, helper, config, pretrained_embeddings, report=None):$/;"	kind:member	line:352
+__init__	../q2_rnn_cell.py	/^    def __init__(self, input_size, state_size):$/;"	kind:member	line:25
+__init__	../q3_gru.py	/^    def __init__(self, config):$/;"	kind:member	line:181
+__init__	../q3_gru_cell.py	/^    def __init__(self, input_size, state_size):$/;"	kind:member	line:25
+__init__	../util.py	/^    def __init__(self, labels, default_label=None):$/;"	kind:member	line:204
+__init__	../util.py	/^    def __init__(self, target, width=30, verbose=1):$/;"	kind:member	line:275
+absolute_import	../q1_window.py	/^from __future__ import absolute_import$/;"	kind:namespace	line:7
+absolute_import	../q2_rnn.py	/^from __future__ import absolute_import$/;"	kind:namespace	line:7
+absolute_import	../q2_rnn_cell.py	/^from __future__ import absolute_import$/;"	kind:namespace	line:7
+absolute_import	../q3_gru.py	/^from __future__ import absolute_import$/;"	kind:namespace	line:7
+absolute_import	../q3_gru_cell.py	/^from __future__ import absolute_import$/;"	kind:namespace	line:7
+add	../util.py	/^    def add(self, n, values=None):$/;"	kind:member	line:366
+add_embedding	../q1_window.py	/^    def add_embedding(self):$/;"	kind:member	line:176
+add_embedding	../q2_rnn.py	/^    def add_embedding(self):$/;"	kind:member	line:172
+add_loss_op	../model.py	/^    def add_loss_op(self, pred):$/;"	kind:member	line:50
+add_loss_op	../q1_window.py	/^    def add_loss_op(self, pred):$/;"	kind:member	line:253
+add_loss_op	../q2_rnn.py	/^    def add_loss_op(self, preds):$/;"	kind:member	line:269
+add_loss_op	../q3_gru.py	/^    def add_loss_op(self, preds):$/;"	kind:member	line:94
+add_placeholders	../model.py	/^    def add_placeholders(self):$/;"	kind:member	line:8
+add_placeholders	../q1_window.py	/^    def add_placeholders(self):$/;"	kind:member	line:120
+add_placeholders	../q2_rnn.py	/^    def add_placeholders(self):$/;"	kind:member	line:118
+add_placeholders	../q3_gru.py	/^    def add_placeholders(self):$/;"	kind:member	line:46
+add_prediction_op	../model.py	/^    def add_prediction_op(self):$/;"	kind:member	line:42
+add_prediction_op	../q1_window.py	/^    def add_prediction_op(self):$/;"	kind:member	line:199
+add_prediction_op	../q2_rnn.py	/^    def add_prediction_op(self):$/;"	kind:member	line:196
+add_prediction_op	../q3_gru.py	/^    def add_prediction_op(self): $/;"	kind:member	line:64
+add_training_op	../model.py	/^    def add_training_op(self, loss):$/;"	kind:member	line:60
+add_training_op	../q1_window.py	/^    def add_training_op(self, loss):$/;"	kind:member	line:273
+add_training_op	../q2_rnn.py	/^    def add_training_op(self, loss):$/;"	kind:member	line:288
+add_training_op	../q3_gru.py	/^    def add_training_op(self, loss):$/;"	kind:member	line:116
+allclose	../util.py	/^from numpy import array, zeros, allclose$/;"	kind:namespace	line:17
+argparse	../q1_window.py	/^import argparse$/;"	kind:namespace	line:10
+argparse	../q2_rnn.py	/^import argparse$/;"	kind:namespace	line:10
+argparse	../q2_rnn_cell.py	/^import argparse$/;"	kind:namespace	line:10
+argparse	../q3_gru.py	/^import argparse$/;"	kind:namespace	line:10
+argparse	../q3_gru_cell.py	/^import argparse$/;"	kind:namespace	line:10
+array	../util.py	/^from numpy import array, zeros, allclose$/;"	kind:namespace	line:17
+as_table	../util.py	/^    def as_table(self):$/;"	kind:member	line:213
+batch_size	../q1_window.py	/^    batch_size = 2048$/;"	kind:variable	line:47
+batch_size	../q2_rnn.py	/^    batch_size = 32$/;"	kind:variable	line:45
+batch_size	../q3_gru.py	/^    batch_size = 100$/;"	kind:variable	line:40
+build	../data_util.py	/^    def build(cls, data):$/;"	kind:member	line:87
+build	../model.py	/^    def build(self):$/;"	kind:member	line:106
+build_dict	../data_util.py	/^def build_dict(words, max_words=None, offset=0):$/;"	kind:function	line:144
+c	../util.py	/^    def c(s):$/;"	kind:function	line:188
+casing	../data_util.py	/^def casing(word):$/;"	kind:function	line:26
+command_parser	../q1_window.py	/^    command_parser = subparsers.add_parser('evaluate', help='')$/;"	kind:variable	line:509
+command_parser	../q1_window.py	/^    command_parser = subparsers.add_parser('shell', help='')$/;"	kind:variable	line:517
+command_parser	../q1_window.py	/^    command_parser = subparsers.add_parser('test1', help='')$/;"	kind:variable	line:492
+command_parser	../q1_window.py	/^    command_parser = subparsers.add_parser('test2', help='')$/;"	kind:variable	line:495
+command_parser	../q1_window.py	/^    command_parser = subparsers.add_parser('train', help='')$/;"	kind:variable	line:502
+command_parser	../q2_rnn.py	/^    command_parser = subparsers.add_parser('evaluate', help='')$/;"	kind:variable	line:538
+command_parser	../q2_rnn.py	/^    command_parser = subparsers.add_parser('shell', help='')$/;"	kind:variable	line:547
+command_parser	../q2_rnn.py	/^    command_parser = subparsers.add_parser('test1', help='')$/;"	kind:variable	line:519
+command_parser	../q2_rnn.py	/^    command_parser = subparsers.add_parser('test2', help='')$/;"	kind:variable	line:522
+command_parser	../q2_rnn.py	/^    command_parser = subparsers.add_parser('train', help='')$/;"	kind:variable	line:530
+command_parser	../q3_gru.py	/^    command_parser = subparsers.add_parser('dynamics', help="Plot cell's dynamics")$/;"	kind:variable	line:343
+command_parser	../q3_gru.py	/^    command_parser = subparsers.add_parser('predict', help='Plot prediction behavior of different cells')$/;"	kind:variable	line:334
+compute_cell_dynamics	../q3_gru.py	/^def compute_cell_dynamics(args):$/;"	kind:function	line:225
+consolidate_predictions	../ner_model.py	/^    def consolidate_predictions(self, data_raw, data, preds):$/;"	kind:member	line:39
+consolidate_predictions	../q1_window.py	/^    def consolidate_predictions(self, examples_raw, examples, preds):$/;"	kind:member	line:300
+consolidate_predictions	../q2_rnn.py	/^    def consolidate_predictions(self, examples_raw, examples, preds):$/;"	kind:member	line:327
+create_feed_dict	../model.py	/^    def create_feed_dict(self, inputs_batch, labels_batch=None):$/;"	kind:member	line:21
+create_feed_dict	../q1_window.py	/^    def create_feed_dict(self, inputs_batch, labels_batch=None, dropout=1):$/;"	kind:member	line:147
+create_feed_dict	../q2_rnn.py	/^    def create_feed_dict(self, inputs_batch, mask_batch, labels_batch=None, dropout=1):$/;"	kind:member	line:146
+create_feed_dict	../q3_gru.py	/^    def create_feed_dict(self, inputs_batch, labels_batch=None):$/;"	kind:member	line:53
+data_util.py	../data_util.py	1;"	kind:file	line:1
+datetime	../q1_window.py	/^from datetime import datetime$/;"	kind:namespace	line:14
+datetime	../q2_rnn.py	/^from datetime import datetime$/;"	kind:namespace	line:14
+datetime	../q3_gru.py	/^from datetime import datetime$/;"	kind:namespace	line:14
+defaultdict	../util.py	/^from collections import defaultdict, Counter, OrderedDict$/;"	kind:namespace	line:15
+defs.py	../defs.py	1;"	kind:file	line:1
+division	../q1_window.py	/^from __future__ import division$/;"	kind:namespace	line:8
+division	../q2_rnn.py	/^from __future__ import division$/;"	kind:namespace	line:8
+division	../q2_rnn_cell.py	/^from __future__ import division$/;"	kind:namespace	line:8
+division	../q3_gru.py	/^from __future__ import division$/;"	kind:namespace	line:8
+division	../q3_gru_cell.py	/^from __future__ import division$/;"	kind:namespace	line:8
+division	../util.py	/^from __future__ import division$/;"	kind:namespace	line:9
+do_evaluate	../q1_window.py	/^def do_evaluate(args):$/;"	kind:function	line:428
+do_evaluate	../q2_rnn.py	/^def do_evaluate(args):$/;"	kind:function	line:455
+do_sequence_prediction	../q3_gru.py	/^def do_sequence_prediction(args):$/;"	kind:function	line:295
+do_shell	../q1_window.py	/^def do_shell(args):$/;"	kind:function	line:452
+do_shell	../q2_rnn.py	/^def do_shell(args):$/;"	kind:function	line:479
+do_test	../q2_rnn_cell.py	/^def do_test(_):$/;"	kind:function	line:109
+do_test	../q3_gru_cell.py	/^def do_test(_):$/;"	kind:function	line:118
+do_test1	../q1_window.py	/^def do_test1(_):$/;"	kind:function	line:357
+do_test1	../q2_rnn.py	/^def do_test1(_):$/;"	kind:function	line:384
+do_test2	../q1_window.py	/^def do_test2(args):$/;"	kind:function	line:362
+do_test2	../q2_rnn.py	/^def do_test2(args):$/;"	kind:function	line:389
+do_train	../q1_window.py	/^def do_train(args):$/;"	kind:function	line:385
+do_train	../q2_rnn.py	/^def do_train(args):$/;"	kind:function	line:412
+dropout	../q1_window.py	/^    dropout = 0.5$/;"	kind:variable	line:44
+dropout	../q2_rnn.py	/^    dropout = 0.5$/;"	kind:variable	line:42
+embed_size	../q1_window.py	/^    embed_size = 50$/;"	kind:variable	line:45
+embed_size	../q2_rnn.py	/^    embed_size = 50$/;"	kind:variable	line:43
+evaluate	../data_util.py	/^def evaluate(model, X, Y):$/;"	kind:function	line:56
+evaluate	../ner_model.py	/^    def evaluate(self, sess, examples, examples_raw):$/;"	kind:member	line:47
+featurize	../data_util.py	/^def featurize(embeddings, word):$/;"	kind:function	line:45
+featurize_windows	../q2_rnn.py	/^        def featurize_windows(data, start, end, window_size = 1):$/;"	kind:function	line:312
+fit	../ner_model.py	/^    def fit(self, sess, saver, train_examples_raw, dev_set_raw):$/;"	kind:member	line:117
+fit	../q3_gru.py	/^    def fit(self, sess, train):$/;"	kind:member	line:171
+generate_sequence	../q3_gru.py	/^def generate_sequence(max_length=20, n_samples=9999):$/;"	kind:function	line:188
+get_chunks	../data_util.py	/^def get_chunks(seq, default=LBLS.index(NONE)):$/;"	kind:function	line:153
+get_chunks	../ner_model.py	/^from data_util import get_chunks$/;"	kind:namespace	line:11
+get_minibatches	../util.py	/^def get_minibatches(data, minibatch_size, shuffle=True):$/;"	kind:function	line:370
+hidden_size	../q1_window.py	/^    hidden_size = 200$/;"	kind:variable	line:46
+hidden_size	../q2_rnn.py	/^    hidden_size = 300$/;"	kind:variable	line:44
+load	../data_util.py	/^    def load(cls, path):$/;"	kind:member	line:109
+load_and_preprocess_data	../data_util.py	/^def load_and_preprocess_data(args):$/;"	kind:function	line:117
+load_and_preprocess_data	../q1_window.py	/^from data_util import load_and_preprocess_data, load_embeddings, read_conll, ModelHelper$/;"	kind:namespace	line:19
+load_and_preprocess_data	../q2_rnn.py	/^from data_util import load_and_preprocess_data, load_embeddings, ModelHelper$/;"	kind:namespace	line:20
+load_embeddings	../data_util.py	/^def load_embeddings(args, helper):$/;"	kind:function	line:133
+load_embeddings	../q1_window.py	/^from data_util import load_and_preprocess_data, load_embeddings, read_conll, ModelHelper$/;"	kind:namespace	line:19
+load_embeddings	../q2_rnn.py	/^from data_util import load_and_preprocess_data, load_embeddings, ModelHelper$/;"	kind:namespace	line:20
+load_word_vector_mapping	../data_util.py	/^from util import read_conll, one_hot, window_iterator, ConfusionMatrix, load_word_vector_mapping$/;"	kind:namespace	line:12
+load_word_vector_mapping	../util.py	/^def load_word_vector_mapping(vocab_fstream, vector_fstream):$/;"	kind:function	line:106
+logger	../data_util.py	/^logger = logging.getLogger(__name__)$/;"	kind:variable	line:15
+logger	../ner_model.py	/^logger = logging.getLogger("hw3")$/;"	kind:variable	line:15
+logger	../q1_window.py	/^logger = logging.getLogger("hw3.q1")$/;"	kind:variable	line:24
+logger	../q2_rnn.py	/^logger = logging.getLogger("hw3.q2")$/;"	kind:variable	line:26
+logger	../q2_rnn_cell.py	/^logger = logging.getLogger("hw3.q2.1")$/;"	kind:variable	line:17
+logger	../q3_gru.py	/^logger = logging.getLogger("hw3.q3")$/;"	kind:variable	line:29
+logger	../q3_gru_cell.py	/^logger = logging.getLogger("hw3.q3.1")$/;"	kind:variable	line:17
+logger	../util.py	/^logger = logging.getLogger("hw3")$/;"	kind:variable	line:19
+logging	../data_util.py	/^import logging$/;"	kind:namespace	line:8
+logging	../ner_model.py	/^import logging$/;"	kind:namespace	line:7
+logging	../q1_window.py	/^import logging$/;"	kind:namespace	line:13
+logging	../q2_rnn.py	/^import logging$/;"	kind:namespace	line:11
+logging	../q2_rnn_cell.py	/^import logging$/;"	kind:namespace	line:11
+logging	../q3_gru.py	/^import logging$/;"	kind:namespace	line:11
+logging	../q3_gru_cell.py	/^import logging$/;"	kind:namespace	line:11
+logging	../util.py	/^import logging$/;"	kind:namespace	line:13
+lr	../q1_window.py	/^    lr = 0.001$/;"	kind:variable	line:49
+lr	../q2_rnn.py	/^    lr = 0.001$/;"	kind:variable	line:48
+lr	../q3_gru.py	/^    lr = 0.2$/;"	kind:variable	line:42
+make_dynamics_plot	../q3_gru.py	/^def make_dynamics_plot(args, x, h, ht_rnn, ht_gru, params):$/;"	kind:function	line:204
+make_prediction_plot	../q3_gru.py	/^def make_prediction_plot(args, losses, grad_norms):$/;"	kind:function	line:282
+make_windowed_data	../q1_window.py	/^def make_windowed_data(data, start, end, window_size=1):$/;"	kind:function	line:63
+mat	../q3_gru.py	/^            def mat(x):$/;"	kind:function	line:236
+matplotlib	../q3_gru.py	/^import matplotlib$/;"	kind:namespace	line:19
+matplotlib	../q3_gru.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:20
+max_grad_norm	../q2_rnn.py	/^    max_grad_norm = 10.$/;"	kind:variable	line:47
+max_grad_norm	../q3_gru.py	/^    max_grad_norm = 5.$/;"	kind:variable	line:43
+max_length	../q2_rnn.py	/^    max_length = 120 # longest sequence to parse$/;"	kind:variable	line:40
+max_length	../q3_gru.py	/^    max_length = 20 # Length of sequence used.$/;"	kind:variable	line:39
+minibatch	../util.py	/^def minibatch(data, minibatch_idx):$/;"	kind:function	line:408
+minibatches	../ner_model.py	/^from util import ConfusionMatrix, Progbar, minibatches$/;"	kind:namespace	line:10
+minibatches	../q3_gru.py	/^from util import Progbar, minibatches$/;"	kind:namespace	line:22
+minibatches	../util.py	/^def minibatches(data, batch_size, shuffle=True):$/;"	kind:function	line:411
+model.py	../model.py	1;"	kind:file	line:1
+n_classes	../q1_window.py	/^    n_classes = 5$/;"	kind:variable	line:43
+n_classes	../q2_rnn.py	/^    n_classes = 5$/;"	kind:variable	line:41
+n_epochs	../q1_window.py	/^    n_epochs = 10$/;"	kind:variable	line:48
+n_epochs	../q2_rnn.py	/^    n_epochs = 10$/;"	kind:variable	line:46
+n_epochs	../q3_gru.py	/^    n_epochs = 40$/;"	kind:variable	line:41
+n_features	../q2_rnn.py	/^    n_features = (2 * window_size + 1) * n_word_features # Number of features for every word in the input.$/;"	kind:variable	line:39
+n_window_features	../q1_window.py	/^    n_window_features = 6 # The total number of features used for each window.$/;"	kind:variable	line:41
+n_word_features	../q1_window.py	/^    n_word_features = 2 # Number of features for every word in the input.$/;"	kind:variable	line:38
+n_word_features	../q2_rnn.py	/^    n_word_features = 2 # Number of features for every word in the input.$/;"	kind:variable	line:37
+ner_model.py	../ner_model.py	1;"	kind:file	line:1
+normalize	../data_util.py	/^def normalize(word):$/;"	kind:function	line:38
+np	../data_util.py	/^import numpy as np$/;"	kind:namespace	line:11
+np	../q2_rnn.py	/^import numpy as np$/;"	kind:namespace	line:17
+np	../q2_rnn_cell.py	/^import numpy as np$/;"	kind:namespace	line:15
+np	../q3_gru.py	/^import numpy as np$/;"	kind:namespace	line:17
+np	../q3_gru_cell.py	/^import numpy as np$/;"	kind:namespace	line:15
+np	../util.py	/^import numpy as np$/;"	kind:namespace	line:16
+one_hot	../data_util.py	/^from util import read_conll, one_hot, window_iterator, ConfusionMatrix, load_word_vector_mapping$/;"	kind:namespace	line:12
+one_hot	../defs.py	/^from util import one_hot$/;"	kind:namespace	line:7
+one_hot	../util.py	/^def one_hot(n, y):$/;"	kind:function	line:161
+os	../data_util.py	/^import os$/;"	kind:namespace	line:6
+output	../ner_model.py	/^    def output(self, sess, inputs_raw, inputs=None):$/;"	kind:member	line:100
+output_	../util.py	/^    output_ = StringIO.StringIO()$/;"	kind:variable	line:101
+output_	../util.py	/^    output_ = output_.getvalue()$/;"	kind:variable	line:103
+output_size	../q2_rnn_cell.py	/^    def output_size(self):$/;"	kind:member	line:34
+output_size	../q3_gru_cell.py	/^    def output_size(self):$/;"	kind:member	line:34
+pad_sequences	../q2_rnn.py	/^def pad_sequences(data, max_length):$/;"	kind:function	line:63
+parser	../q1_window.py	/^    parser = argparse.ArgumentParser(description='Trains and tests an NER model')$/;"	kind:variable	line:489
+parser	../q2_rnn.py	/^    parser = argparse.ArgumentParser(description='Trains and tests an NER model')$/;"	kind:variable	line:516
+parser	../q3_gru.py	/^    parser = argparse.ArgumentParser(description='Runs a sequence model to test latching behavior of memory, e.g. 100000000 -> 1')$/;"	kind:variable	line:331
+pdb	../ner_model.py	/^import pdb$/;"	kind:namespace	line:6
+pickle	../data_util.py	/^import pickle$/;"	kind:namespace	line:7
+plt	../q3_gru.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:20
+predict_on_batch	../model.py	/^    def predict_on_batch(self, sess, inputs_batch):$/;"	kind:member	line:93
+predict_on_batch	../q1_window.py	/^    def predict_on_batch(self, sess, inputs_batch):$/;"	kind:member	line:312
+predict_on_batch	../q2_rnn.py	/^    def predict_on_batch(self, sess, inputs_batch, mask_batch):$/;"	kind:member	line:341
+predictions	../q1_window.py	/^                        predictions = [LBLS[l] for l in predictions]$/;"	kind:variable	line:482
+predictions	../q2_rnn.py	/^                        predictions = [LBLS[l] for l in predictions]$/;"	kind:variable	line:509
+preprocess_sequence_data	../ner_model.py	/^    def preprocess_sequence_data(self, examples):$/;"	kind:member	line:29
+preprocess_sequence_data	../q1_window.py	/^    def preprocess_sequence_data(self, examples):$/;"	kind:member	line:297
+preprocess_sequence_data	../q2_rnn.py	/^    def preprocess_sequence_data(self, examples):$/;"	kind:member	line:311
+print_sentence	../q1_window.py	/^from util import print_sentence, write_conll$/;"	kind:namespace	line:18
+print_sentence	../q2_rnn.py	/^from util import print_sentence, write_conll, read_conll$/;"	kind:namespace	line:19
+print_sentence	../util.py	/^def print_sentence(output, sentence, labels, predictions):$/;"	kind:function	line:415
+q1_window.py	../q1_window.py	1;"	kind:file	line:1
+q2_rnn.py	../q2_rnn.py	1;"	kind:file	line:1
+q2_rnn_cell.py	../q2_rnn_cell.py	1;"	kind:file	line:1
+q3_gru.py	../q3_gru.py	1;"	kind:file	line:1
+q3_gru_cell.py	../q3_gru_cell.py	1;"	kind:file	line:1
+read_conll	../data_util.py	/^from util import read_conll, one_hot, window_iterator, ConfusionMatrix, load_word_vector_mapping$/;"	kind:namespace	line:12
+read_conll	../q1_window.py	/^from data_util import load_and_preprocess_data, load_embeddings, read_conll, ModelHelper$/;"	kind:namespace	line:19
+read_conll	../q2_rnn.py	/^from util import print_sentence, write_conll, read_conll$/;"	kind:namespace	line:19
+read_conll	../util.py	/^def read_conll(fstream):$/;"	kind:function	line:23
+run_epoch	../ner_model.py	/^    def run_epoch(self, sess, train_examples, dev_set, train_examples_raw, dev_set_raw):$/;"	kind:member	line:77
+run_epoch	../q3_gru.py	/^    def run_epoch(self, sess, train):$/;"	kind:member	line:160
+save	../data_util.py	/^    def save(self, path):$/;"	kind:member	line:100
+sentence	../q1_window.py	/^                    sentence = raw_input("input> ")$/;"	kind:variable	line:479
+sentence	../q2_rnn.py	/^                    sentence = raw_input("input> ")$/;"	kind:variable	line:506
+state_size	../q2_rnn_cell.py	/^    def state_size(self):$/;"	kind:member	line:30
+state_size	../q3_gru_cell.py	/^    def state_size(self):$/;"	kind:member	line:30
+subparsers	../q1_window.py	/^    subparsers = parser.add_subparsers()$/;"	kind:variable	line:490
+subparsers	../q2_rnn.py	/^    subparsers = parser.add_subparsers()$/;"	kind:variable	line:517
+subparsers	../q3_gru.py	/^    subparsers = parser.add_subparsers()$/;"	kind:variable	line:332
+summary	../util.py	/^    def summary(self, quiet=False):$/;"	kind:member	line:219
+sys	../q1_window.py	/^import sys$/;"	kind:namespace	line:11
+sys	../q2_rnn.py	/^import sys$/;"	kind:namespace	line:12
+sys	../q2_rnn_cell.py	/^import sys$/;"	kind:namespace	line:12
+sys	../q3_gru.py	/^import sys$/;"	kind:namespace	line:12
+sys	../q3_gru_cell.py	/^import sys$/;"	kind:namespace	line:12
+sys	../util.py	/^import sys$/;"	kind:namespace	line:11
+test_generate_sequence	../q3_gru.py	/^def test_generate_sequence():$/;"	kind:function	line:198
+test_get_chunks	../data_util.py	/^def test_get_chunks():$/;"	kind:function	line:180
+test_gru_cell	../q3_gru_cell.py	/^def test_gru_cell():$/;"	kind:function	line:76
+test_load_word_vector_mapping	../util.py	/^def test_load_word_vector_mapping():$/;"	kind:function	line:120
+test_make_windowed_data	../q1_window.py	/^def test_make_windowed_data():$/;"	kind:function	line:343
+test_pad_sequences	../q2_rnn.py	/^def test_pad_sequences():$/;"	kind:function	line:366
+test_read_conll	../util.py	/^def test_read_conll():$/;"	kind:function	line:48
+test_rnn_cell	../q2_rnn_cell.py	/^def test_rnn_cell():$/;"	kind:function	line:73
+test_window_iterator	../util.py	/^def test_window_iterator():$/;"	kind:function	line:157
+test_write_conll	../util.py	/^def test_write_conll():$/;"	kind:function	line:82
+tf	../ner_model.py	/^import tensorflow as tf$/;"	kind:namespace	line:9
+tf	../q1_window.py	/^import tensorflow as tf$/;"	kind:namespace	line:16
+tf	../q2_rnn.py	/^import tensorflow as tf$/;"	kind:namespace	line:16
+tf	../q2_rnn_cell.py	/^import tensorflow as tf$/;"	kind:namespace	line:14
+tf	../q3_gru.py	/^import tensorflow as tf$/;"	kind:namespace	line:16
+tf	../q3_gru_cell.py	/^import tensorflow as tf$/;"	kind:namespace	line:14
+time	../q1_window.py	/^import time$/;"	kind:namespace	line:12
+time	../q2_rnn.py	/^import time$/;"	kind:namespace	line:13
+time	../q3_gru.py	/^import time$/;"	kind:namespace	line:13
+time	../util.py	/^import time$/;"	kind:namespace	line:12
+to_table	../util.py	/^def to_table(data, row_labels, column_labels, precision=2, digits=4):$/;"	kind:function	line:177
+tokens	../q1_window.py	/^                    tokens = sentence.strip().split(" ")$/;"	kind:variable	line:480
+tokens	../q2_rnn.py	/^                    tokens = sentence.strip().split(" ")$/;"	kind:variable	line:507
+train_on_batch	../model.py	/^    def train_on_batch(self, sess, inputs_batch, labels_batch):$/;"	kind:member	line:79
+train_on_batch	../q1_window.py	/^    def train_on_batch(self, sess, inputs_batch, labels_batch):$/;"	kind:member	line:325
+train_on_batch	../q2_rnn.py	/^    def train_on_batch(self, sess, inputs_batch, labels_batch, mask_batch):$/;"	kind:member	line:346
+train_on_batch	../q3_gru.py	/^    def train_on_batch(self, sess, inputs_batch, labels_batch):$/;"	kind:member	line:152
+update	../util.py	/^    def update(self, current, values=None, exact=None):$/;"	kind:member	line:285
+update	../util.py	/^    def update(self, gold, guess):$/;"	kind:member	line:209
+util.py	../util.py	1;"	kind:file	line:1
+vec	../q3_gru.py	/^            def vec(x):$/;"	kind:function	line:238
+vectorize	../data_util.py	/^    def vectorize(self, data):$/;"	kind:member	line:83
+vectorize_example	../data_util.py	/^    def vectorize_example(self, sentence, labels=None):$/;"	kind:member	line:75
+window_iterator	../data_util.py	/^from util import read_conll, one_hot, window_iterator, ConfusionMatrix, load_word_vector_mapping$/;"	kind:namespace	line:12
+window_iterator	../q2_rnn.py	/^                from util import window_iterator$/;"	kind:namespace	line:317
+window_iterator	../util.py	/^def window_iterator(seq, n=1, beg="<s>", end="<\/s>"):$/;"	kind:function	line:143
+window_size	../q1_window.py	/^    window_size = 1 # The size of the window to use.$/;"	kind:variable	line:39
+window_size	../q2_rnn.py	/^    window_size = 1$/;"	kind:variable	line:38
+write_conll	../q1_window.py	/^from util import print_sentence, write_conll$/;"	kind:namespace	line:18
+write_conll	../q2_rnn.py	/^from util import print_sentence, write_conll, read_conll$/;"	kind:namespace	line:19
+write_conll	../util.py	/^def write_conll(fstream, data):$/;"	kind:function	line:71
+zeros	../util.py	/^from numpy import array, zeros, allclose$/;"	kind:namespace	line:17
